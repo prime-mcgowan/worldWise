@@ -16,7 +16,9 @@ function PageNav() {
           <NavLink to="/pricing">Pricing</NavLink>
         </li>
         <li>
-          <NavLink to="/login">Log In</NavLink>
+          <NavLink to="/login" className={styles.ctaLink}>
+            Log In
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -11,6 +11,7 @@ import CityList from "./components/CityList";
 import { useState } from "react";
 import { useEffect } from "react";
 import CountryList from "./components/CountryList";
+import City from "./components/City";
 
 function App() {
   const BASE_URL = "http://localhost:9000";
@@ -52,6 +53,9 @@ function App() {
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
+
+          {/* using Params */}
+          <Route path="cities/:id" element={<City />} />
 
           <Route
             path="countries"
